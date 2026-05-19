@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Dipiz Creation — Handmade Jewellery & Art | Kolkata Newtown</title>
+  <!-- ══ SEO META TAGS ══ -->
+  <meta name="description" content="Dipiz Creation — Handcrafted jewellery, necklaces & art from Kolkata Newtown. Jagannath necklace, Bengali traditional jewellery set, custom designs. Order via WhatsApp!" />
+  <meta name="keywords" content="Dipiz Creation, handmade jewellery Kolkata, হাতের তৈরি গহনা, Bengali jewellery, Jagannath necklace, terracotta jewellery, custom jewellery Newtown, art and design Kolkata, handcrafted necklace West Bengal" />
+  <meta name="author" content="Dipiz Creation" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://soubhikpramanik80-arch.github.io/dipiz-creation" />
+
+  <!-- ══ OPEN GRAPH (WhatsApp / Facebook preview) ══ -->
+  <meta property="og:title" content="Dipiz Creation — Handmade Jewellery & Art" />
+  <meta property="og:description" content="Handcrafted jewellery, necklaces & art from Kolkata Newtown. Custom designs available. Order via WhatsApp!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://soubhikpramanik80-arch.github.io/dipiz-creation" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="Dipiz Creation" />
+
+  <!-- ══ TWITTER CARD ══ -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Dipiz Creation — Handmade Jewellery & Art" />
+  <meta name="twitter:description" content="Handcrafted jewellery & art from Kolkata Newtown. Order via WhatsApp!" />
+
+  <!-- ══ GOOGLE STRUCTURED DATA ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Dipiz Creation",
+    "description": "Handcrafted jewellery, necklaces and art from Kolkata Newtown",
+    "url": "https://soubhikpramanik80-arch.github.io/dipiz-creation",
+    "telephone": "+917439374758",
+    "email": "soubhikpramanik80@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Newtown",
+      "addressRegion": "West Bengal",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "22.5958",
+      "longitude": "88.4803"
+    },
+    "openingHours": "Mo-Su 09:00-21:00",
+    "priceRange": "₹99 - ₹999",
+    "sameAs": [
+      "https://www.instagram.com/dipiz_creation"
+    ]
+  }
+  </script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Cinzel:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+/* ══ EXACT LOGO PALETTE ══
+   Vivid:   #d5a692
+   Main:    #c8a69a
+   Muted:   #b39e95
+   Shadow:  #9f867f
+   Deep:    #8d6c63
+   Paper:   #ede8e0  ← logo background
+*/
+:root {
+  --rg-vivid:   #d5a692;
+  --rg-main:    #c8a69a;
+  --rg-muted:   #b39e95;
+  --rg-shadow:  #9f867f;
+  --rg-deep:    #8d6c63;
+
+  --paper:      #ede8e0;
+  --paper2:     #e4ddd4;
+  --paper3:     #d8cfc4;
+  --ink:        #2a1f1a;
+  --ink2:       #4a3830;
+  --ink3:       #7a6358;
+
+  --white:      #f9f5f0;
+  --border:     rgba(159,134,127,.22);
+  --border2:    rgba(159,134,127,.10);
+  --rg-glow:    rgba(200,166,154,.30);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:'Jost',sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  min-height:100vh;
+}
+
+/* ══ HEADER ══ */
+header{
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  padding:0 20px;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 20px rgba(141,108,99,.08);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:6px 0;
+  gap:12px;
+}
+.logo-wrap{flex:1;display:flex;justify-content:center;}
+.logo-img{
+  height:80px;
+  width:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 2px 8px rgba(141,108,99,.20));
+  transition:filter .3s;
+}
+.logo-img:hover{
+  filter:drop-shadow(0 3px 16px rgba(200,166,154,.45));
+}
+
+#cart-header-btn{
+  background:transparent;
+  border:1.5px solid var(--rg-muted);
+  color:var(--rg-deep);
+  font-family:'Cinzel',serif;
+  font-size:9.5px;
+  font-weight:500;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  padding:9px 14px;
+  border-radius:2px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  transition:all .25s;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+#cart-header-btn:hover{
+  background:var(--rg-main);
+  border-color:var(--rg-main);
+  color:var(--white);
+  box-shadow:0 4px 16px var(--rg-glow);
+}
+.cart-count-badge{
+  background:var(--rg-deep);
+  color:var(--white);
+  border-radius:50%;
+  width:18px;height:18px;
+  font-size:10px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .25s;
+}
+#cart-header-btn:hover .cart-count-badge{background:var(--white);color:var(--rg-deep);}
+.cart-count-badge.pop{animation:pop .3s ease;}
+@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.6)}}
+
+/* ══ HERO ══ */
+.hero{
+  text-align:center;
+  padding:48px 24px 36px;
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  bottom:0;left:50%;
+  transform:translateX(-50%);
+  width:160px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--rg-main),transparent);
+}
+.hero-eyebrow{
+  font-family:'Cinzel',serif;
+  font-size:9px;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  color:var(--rg-shadow);
+  margin-bottom:14px;
+}
+.hero-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(30px,8vw,50px);
+  font-weight:300;
+  line-height:1.1;
+  color:var(--ink);
+  letter-spacing:.5px;
+}
+.hero-title em{
+  font-style:italic;
+  color:var(--rg-main);
+  font-weight:400;
+}
+.hero-divider{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  justify-content:center;
+  margin:16px 0;
+}
+.hero-line{
+  width:48px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--rg-muted));
+}
+.hero-diamond{
+  width:5px;height:5px;
+  background:var(--rg-main);
+  transform:rotate(45deg);
+  box-shadow:0 0 6px var(--rg-glow);
+}
+.hero-sub{
+  font-family:'Jost',sans-serif;
+  font-size:11px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:var(--ink3);
+  font-weight:300;
+}
+
+/* ══ FILTERS ══ */
+.filters-wrap{padding:22px 20px 0;}
+.filters-label{
+  font-family:'Cinzel',serif;
+  font-size:8px;
+  letter-spacing:3.5px;
+  text-transform:uppercase;
+  color:var(--ink3);
+  margin-bottom:10px;
+}
+.filters{
+  display:flex;gap:8px;
+  overflow-x:auto;-webkit-overflow-scrolling:touch;
+  scrollbar-width:none;padding-bottom:2px;
+}
+.filters::-webkit-scrollbar{display:none;}
+.filter-btn{
+  flex-shrink:0;
+  padding:7px 18px;
+  border-radius:1px;
+  border:1.5px solid var(--paper3);
+  background:transparent;
+  color:var(--ink3);
+  font-family:'Cinzel',serif;
+  font-size:9px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:all .22s;
+}
+.filter-btn.active,.filter-btn:hover{
+  border-color:var(--rg-main);
+  color:var(--rg-deep);
+  background:rgba(200,166,154,.12);
+}
+
+/* ══ SECTION HEADER ══ */
+.section-header{
+  padding:24px 20px 8px;
+  display:flex;align-items:baseline;gap:14px;
+}
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px;font-weight:300;
+  color:var(--ink);letter-spacing:.5px;
+}
+.section-title em{font-style:italic;color:var(--rg-main);font-weight:400;}
+.section-count{
+  font-family:'Cinzel',serif;font-size:9px;
+  letter-spacing:2px;color:var(--ink3);text-transform:uppercase;
+}
+
+/* ══ PRODUCT GRID ══ */
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:12px;
+  padding:12px 20px 130px;
+}
+.product-card{
+  background:var(--white);
+  display:flex;flex-direction:column;
+  border:1px solid var(--border2);
+  transition:all .28s;
+  animation:fadeUp .5s ease both;
+  overflow:hidden;
+}
+.product-card:hover{
+  border-color:var(--rg-muted);
+  box-shadow:0 6px 28px rgba(141,108,99,.12);
+  transform:translateY(-3px);
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+.product-img-wrap{
+  position:relative;padding-top:108%;
+  background:var(--paper2);overflow:hidden;
+}
+.product-img-wrap img{
+  position:absolute;inset:0;
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .5s cubic-bezier(.2,.8,.3,1);
+}
+.product-card:hover .product-img-wrap img{transform:scale(1.06);}
+.product-cat-tag{
+  position:absolute;bottom:8px;left:8px;
+  background:rgba(249,245,240,.9);
+  color:var(--rg-deep);
+  font-family:'Cinzel',serif;font-size:7.5px;
+  padding:4px 10px;letter-spacing:1.5px;text-transform:uppercase;
+  border:1px solid var(--border);
+}
+
+.product-info{
+  padding:14px;flex:1;
+  display:flex;flex-direction:column;gap:5px;
+  border-top:1px solid var(--border2);
+}
+.product-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:16px;font-weight:400;
+  line-height:1.25;color:var(--ink);letter-spacing:.3px;
+}
+.product-desc{
+  font-family:'Jost',sans-serif;
+  font-size:11px;font-weight:300;
+  color:var(--ink3);line-height:1.55;flex:1;
+}
+.product-footer{
+  display:flex;align-items:center;
+  justify-content:space-between;
+  margin-top:12px;padding-top:10px;
+  border-top:1px solid var(--border2);
+}
+.product-price{
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-weight:600;
+  color:var(--rg-deep);letter-spacing:.5px;
+}
+.add-btn{
+  background:transparent;
+  color:var(--rg-deep);
+  border:1.5px solid var(--rg-muted);
+  border-radius:1px;padding:7px 12px;
+  font-family:'Cinzel',serif;font-size:8.5px;
+  letter-spacing:1.5px;text-transform:uppercase;
+  cursor:pointer;transition:all .22s;
+}
+.add-btn:hover{
+  background:var(--rg-main);
+  color:var(--white);border-color:var(--rg-main);
+  box-shadow:0 3px 12px var(--rg-glow);
+}
+.add-btn.added{
+  background:var(--rg-deep);
+  color:var(--white);border-color:var(--rg-deep);
+}
+
+/* ══ EMPTY STATE ══ */
+#empty-state{text-align:center;padding:60px 20px;display:none;}
+#empty-state p{
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-style:italic;color:var(--ink3);
+}
+
+/* ══ CART MODAL ══ */
+.cart-overlay{
+  position:fixed;inset:0;background:rgba(42,31,26,.6);
+  z-index:200;display:none;align-items:flex-end;justify-content:center;
+  backdrop-filter:blur(4px);
+}
+.cart-overlay.open{display:flex;}
+.cart-sheet{
+  background:var(--white);width:100%;max-width:560px;max-height:92vh;
+  border-radius:16px 16px 0 0;
+  border-top:2px solid var(--rg-muted);
+  display:flex;flex-direction:column;overflow:hidden;
+  animation:slideUp .3s cubic-bezier(.2,.8,.4,1);
+  box-shadow:0 -8px 40px rgba(141,108,99,.15);
+}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.cart-header{
+  padding:20px;display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid var(--border);background:var(--paper);
+}
+.cart-header h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:300;color:var(--ink);
+}
+.cart-header h2 em{font-style:italic;color:var(--rg-main);}
+.close-btn{
+  background:var(--paper2);border:1px solid var(--border);
+  border-radius:50%;width:34px;height:34px;
+  font-size:13px;cursor:pointer;color:var(--ink3);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .2s;
+}
+.close-btn:hover{background:var(--rg-main);border-color:var(--rg-main);color:var(--white);}
+.cart-body{flex:1;overflow-y:auto;padding:16px 20px;}
+.cart-empty-msg{
+  text-align:center;padding:50px 20px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-style:italic;color:var(--ink3);
+}
+.cart-empty-msg .emo{font-size:32px;display:block;margin-bottom:10px;font-style:normal;}
+.cart-item{
+  display:flex;align-items:center;gap:12px;
+  border-bottom:1px solid var(--border2);padding:14px 0;
+}
+.cart-item:last-child{border-bottom:none;}
+.cart-item-img{
+  width:54px;height:54px;object-fit:cover;
+  background:var(--paper2);flex-shrink:0;
+  border:1px solid var(--border);
+}
+.cart-item-details{flex:1;min-width:0;}
+.cart-item-name{
+  font-family:'Cormorant Garamond',serif;font-size:15px;
+  font-weight:400;color:var(--ink);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.cart-item-price{font-size:12px;color:var(--rg-deep);margin-top:3px;letter-spacing:.5px;}
+.cart-item-subtotal{font-size:11px;color:var(--ink3);margin-top:1px;}
+.qty-controls{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.qty-btn{
+  width:26px;height:26px;border-radius:1px;
+  border:1.5px solid var(--paper3);background:transparent;
+  color:var(--ink3);font-size:14px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .15s;line-height:1;
+}
+.qty-btn:hover{border-color:var(--rg-main);color:var(--rg-deep);background:rgba(200,166,154,.1);}
+.qty-num{font-size:13px;color:var(--ink);min-width:18px;text-align:center;font-weight:500;}
+.remove-btn{
+  background:none;border:none;cursor:pointer;
+  font-size:13px;padding:4px;color:var(--paper3);
+  transition:color .2s;flex-shrink:0;
+}
+.remove-btn:hover{color:var(--rg-deep);}
+.cart-footer{
+  padding:18px 20px;border-top:1px solid var(--border);
+  background:var(--paper);
+}
+.total-row{
+  display:flex;justify-content:space-between;align-items:baseline;
+  margin-bottom:16px;
+}
+.total-label{
+  font-family:'Cinzel',serif;font-size:9px;
+  letter-spacing:2.5px;text-transform:uppercase;color:var(--ink3);
+}
+.total-amount{
+  font-family:'Cormorant Garamond',serif;font-size:28px;
+  font-weight:600;color:var(--rg-deep);letter-spacing:1px;
+}
+.checkout-btn{
+  width:100%;padding:16px;
+  background:linear-gradient(135deg,var(--rg-deep),var(--rg-main));
+  color:var(--white);border:none;border-radius:2px;
+  font-family:'Cinzel',serif;font-size:11px;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;cursor:pointer;
+  transition:all .25s;
+  box-shadow:0 4px 18px var(--rg-glow);
+}
+.checkout-btn:hover{
+  background:linear-gradient(135deg,var(--rg-main),var(--rg-vivid));
+  box-shadow:0 6px 26px var(--rg-glow);
+  transform:translateY(-1px);
+}
+
+/* ══ ORDER MODAL ══ */
+.order-overlay{
+  position:fixed;inset:0;background:rgba(42,31,26,.65);
+  z-index:300;display:none;align-items:flex-end;justify-content:center;
+  backdrop-filter:blur(4px);
+}
+.order-overlay.open{display:flex;}
+.order-sheet{
+  background:var(--white);width:100%;max-width:560px;max-height:95vh;
+  border-radius:16px 16px 0 0;border-top:2px solid var(--rg-muted);
+  display:flex;flex-direction:column;overflow:hidden;
+  animation:slideUp .3s cubic-bezier(.2,.8,.4,1);
+  box-shadow:0 -8px 40px rgba(141,108,99,.15);
+}
+.order-header{
+  padding:20px;display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid var(--border);background:var(--paper);
+}
+.order-header h2{
+  font-family:'Cormorant Garamond',serif;font-size:22px;
+  font-weight:300;color:var(--ink);
+}
+.order-header h2 em{font-style:italic;color:var(--rg-main);}
+.order-body{flex:1;overflow-y:auto;padding:20px;}
+.order-summary-box{
+  border:1px solid var(--border);border-radius:2px;
+  padding:16px;margin-bottom:20px;background:var(--paper);
+}
+.order-summary-box h3{
+  font-family:'Cinzel',serif;font-size:8.5px;
+  letter-spacing:3px;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:12px;
+}
+.order-summary-box ul{list-style:none;}
+.order-summary-box li{
+  font-family:'Jost',sans-serif;font-size:13px;font-weight:300;
+  color:var(--ink2);display:flex;justify-content:space-between;
+  padding:6px 0;border-bottom:1px solid var(--border2);
+}
+.order-summary-box li:last-child{
+  border:none;color:var(--rg-deep);font-weight:500;
+  font-size:15px;padding-top:10px;
+}
+.field-group{margin-bottom:16px;}
+.field-group label{
+  display:block;font-family:'Cinzel',serif;font-size:8.5px;
+  color:var(--ink3);letter-spacing:2.5px;
+  text-transform:uppercase;margin-bottom:8px;
+}
+.field-group input,
+.field-group textarea{
+  width:100%;padding:13px 14px;
+  border:1.5px solid var(--border);border-radius:2px;
+  background:var(--paper);font-family:'Jost',sans-serif;
+  font-size:14px;font-weight:300;color:var(--ink);
+  outline:none;transition:border-color .2s,box-shadow .2s;
+  -webkit-appearance:none;
+}
+.field-group input:focus,.field-group textarea:focus{
+  border-color:var(--rg-main);
+  box-shadow:0 0 0 3px rgba(200,166,154,.12);
+}
+.field-group input::placeholder,.field-group textarea::placeholder{color:var(--ink3);}
+.field-group textarea{resize:none;height:80px;}
+.place-order-btn{
+  width:100%;padding:17px;
+  background:linear-gradient(135deg,var(--rg-deep),var(--rg-main));
+  color:var(--white);border:none;border-radius:2px;
+  font-family:'Cinzel',serif;font-size:11px;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;cursor:pointer;
+  transition:all .25s;margin-top:6px;
+  box-shadow:0 4px 18px var(--rg-glow);
+}
+.place-order-btn:hover{
+  background:linear-gradient(135deg,var(--rg-main),var(--rg-vivid));
+  box-shadow:0 6px 26px var(--rg-glow);transform:translateY(-1px);
+}
+
+/* ══ SUCCESS ══ */
+#success-overlay{
+  position:fixed;inset:0;
+  background:var(--paper);
+  background-image:radial-gradient(ellipse 70% 50% at 50% 30%,rgba(200,166,154,.15) 0%,transparent 70%);
+  z-index:400;display:none;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;padding:30px;
+}
+#success-overlay.open{display:flex;}
+.success-icon{font-size:52px;margin-bottom:18px;animation:pulse-rg 2.5s ease-in-out infinite;}
+@keyframes pulse-rg{
+  0%,100%{filter:drop-shadow(0 0 6px rgba(200,166,154,.3));}
+  50%{filter:drop-shadow(0 0 20px rgba(200,166,154,.7));}
+}
+.success-eyebrow{
+  font-family:'Cinzel',serif;font-size:9px;
+  letter-spacing:4px;text-transform:uppercase;
+  color:var(--rg-shadow);margin-bottom:12px;
+}
+#success-overlay h2{
+  font-family:'Cormorant Garamond',serif;font-size:38px;
+  font-weight:300;font-style:italic;color:var(--ink);
+  margin-bottom:12px;letter-spacing:1px;
+}
+#success-overlay p{
+  font-family:'Jost',sans-serif;color:var(--ink3);
+  font-size:13px;line-height:1.8;max-width:300px;
+  font-weight:300;
+}
+#success-overlay p strong{color:var(--rg-deep);font-weight:500;}
+.wa-confirm-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  margin-top:28px;background:#25D366;color:#fff;
+  text-decoration:none;padding:14px 28px;border-radius:2px;
+  font-family:'Cinzel',serif;font-size:10px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  transition:all .25s;box-shadow:0 4px 18px rgba(37,211,102,.3);
+}
+.wa-confirm-btn:hover{background:#1ebe5b;transform:translateY(-1px);box-shadow:0 6px 24px rgba(37,211,102,.45);}
+.back-shopping-btn{
+  margin-top:12px;background:none;
+  border:1.5px solid var(--border);color:var(--ink3);
+  padding:12px 24px;border-radius:2px;
+  font-family:'Cinzel',serif;font-size:9px;
+  letter-spacing:2px;text-transform:uppercase;
+  cursor:pointer;transition:all .2s;
+}
+.back-shopping-btn:hover{border-color:var(--rg-main);color:var(--rg-deep);}
+
+/* ══ WHATSAPP FLOAT ══ */
+.wa-float{
+  position:fixed;bottom:24px;left:20px;z-index:150;
+  background:#25D366;color:#fff;border-radius:50px;
+  padding:11px 18px;display:flex;align-items:center;gap:8px;
+  text-decoration:none;font-family:'Jost',sans-serif;
+  font-size:12px;font-weight:500;letter-spacing:.5px;
+  box-shadow:0 4px 18px rgba(37,211,102,.35);
+  transition:transform .2s,box-shadow .2s;
+}
+.wa-float:hover{transform:scale(1.05);box-shadow:0 6px 24px rgba(37,211,102,.5);}
+
+/* ══ FOOTER ══ */
+footer{
+  background:var(--ink);
+  border-top:1px solid rgba(200,166,154,.15);
+  text-align:center;padding:32px 20px;
+  margin-top:20px;
+}
+.footer-logo{
+  font-family:'Cinzel',serif;font-size:12px;
+  letter-spacing:5px;text-transform:uppercase;
+  color:var(--rg-main);margin-bottom:6px;
+}
+.footer-
